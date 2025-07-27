@@ -8,7 +8,7 @@
   <strong>Your friendly assistant for summarizing documents. Quickly extract, review, and manage highlighted text to turn hours of review into minutes of focused work.</strong>
 </p>
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">.
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
   <img src="https://img.shields.io/badge/PySide6-217346?style=for-the-badge&logo=qt&logoColor=white" alt="PySide6">
 </p>
 
@@ -51,8 +51,8 @@ If you want to run the application from its source code, you'll need Python 3.
 
 **1. Clone the repository:**
 ```bash
-git clone https://github.com/user/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/emzakit/slothymarker.git
+cd slothymarker
 ```
 
 **2. Create and activate a virtual environment (recommended):**
