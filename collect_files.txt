@@ -1,0 +1,5 @@
+# List of individual files to bundle with the application.
+# Blank lines and lines starting with # are ignored.
+
+config.json
+readme.html

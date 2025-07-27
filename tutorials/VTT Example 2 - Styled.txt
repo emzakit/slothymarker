@@ -1,0 +1,32 @@
+[VTT]
+WEBVTT
+
+STYLE
+::cue {
+  background-color: rgba(40, 40, 40, 0.8);
+  color: #90EE90; /* LightGreen */
+}
+::cue(b) {
+  color: #FFD700; /* Gold */
+}
+
+00:00:01.000 --> 00:00:06.000
+==Sometimes a VTT file has CSS styling. That's what you see above.==
+Don't worry about it. You can ignore it.
+
+00:00:09.100 --> 00:00:14.300
+<v Master Sloth>To understand the universe, one must first understand the leaf.
+Try highlighting this line of wisdom.
+
+00:00:16.000 --> 00:00:21.040
+<v Narrator>The Master imparts his knowledge.
+<b>Patience</b>, he teaches, is not about waiting, but <i>how</i> you wait.
+
+00:00:23.500 --> 00:00:27.800
+<v Master Sloth>The journey to the next branch is not measured in distance.
+It is measured in <u>breaths</u>.
+
+00:00:35.250 --> 00:00:40.000
+<v Master Sloth>==The secret... is a good, long nap.
+<b>A very, very long nap.</b>
+This profound secret is pre-highlighted. Try removing it.==

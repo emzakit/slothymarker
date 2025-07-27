@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slothy Marker Documentation</title>
+    <style>
+        :root {
+            --bg-primary: #FFFFFF;
+            --bg-secondary: #F8F9FA;
+            --text-primary: #212529;
+            --text-secondary: #6C757D;
+            --accent-orange: #F39C12;
+            --border-color: #DEE2E6;
+            --corner-radius: 6px;
+            --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        html { scroll-behavior: smooth; }
+
+        body { font-family: var(--font-family); background-color: var(--bg-secondary); color: var(--text-primary); line-height: 1.6; margin: 0; padding: 2rem; display: flex; gap: 2rem; justify-content: center; }
+        
+        .sidebar { width: 220px; flex-shrink: 0; position: sticky; top: 2rem; align-self: flex-start; }
+        
+        .sidebar nav { background-color: var(--bg-primary); padding: 1rem; border-radius: var(--corner-radius); box-shadow: 0 4px 12px rgba(0,0,0,0.05); border: 1px solid var(--border-color); }
+        
+        .sidebar h3 { font-size: 1.1rem; color: var(--text-primary); margin-top: 0; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border-color); }
+        
+        .sidebar ul { list-style: none; padding: 0; margin: 0; }
+        
+        .sidebar li a { display: block; padding: 0.5rem 0.75rem; text-decoration: none; color: var(--text-secondary); border-radius: 6px; transition: all 0.2s ease; font-size: 0.9rem; }
+        
+        .sidebar li a:hover { background-color: var(--bg-secondary); color: var(--text-primary); }
+        
+        .sidebar li a.active { background-color: var(--accent-orange); color: white; font-weight: 600; }
+        
+        .container { max-width: 800px; width: 100%; background-color: var(--bg-primary); padding: 2rem 3rem; border-radius: var(--corner-radius); box-shadow: 0 4px 12px rgba(0,0,0,0.05); border: 1px solid var(--border-color); padding-bottom: 45vh; }
+        
+        .header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); }
+        
+        .header-logo { height: 100px; width: auto; }
+        h1 { color: var(--text-primary); font-size: 2.5rem; margin-bottom: 0.5rem; }
+        
+        .subheading { font-size: 1.25rem; color: var(--accent-orange); margin-top: 0; margin-bottom: 2rem; }
+        
+        h2 { font-size: 1.75rem; color: var(--accent-orange); display: flex; align-items: center; gap: 0.75rem; margin-top: 3rem; padding-top: 1rem; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border-color); }
+        
+        h2 .icon { width: 1.2em; height: 1.2em; fill: var(--accent-orange); vertical-align: middle; }
+        
+        h3 { margin-top: 2rem; margin-bottom: 1rem; font-size: 1.2rem; color: var(--accent-orange); border-left: 3px solid var(--accent-orange); padding-left: 1rem; }
+        
+        hr { border: none; height: 1px; background-color: var(--border-color); margin: 3rem 0; }
+        
+        p, ul, ol { color: var(--text-secondary); }
+        
+        strong { color: var(--text-primary); font-weight: 600; }
+        
+        code { background-color: #e9ecef; color: #495057; padding: 0.2em 0.4em; border-radius: 4px; font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+        
+        pre > code { display: block; padding: 1rem; white-space: pre-wrap; word-wrap: break-word; }
+        
+        .quote-block { white-space: pre-wrap; color: var(--text-secondary); font-size: 0.9rem; background-color: #f8f9fa; padding: 1rem; border-radius: var(--corner-radius); border: 1px solid var(--border-color); }
+    </style>
+</head>
+<body>
+    <aside class="sidebar">
+        <nav>
+            <h3>Contents</h3>
+            <ul>
+                <li><a href="#welcome" class="active">Welcome</a></li>
+                <li><a href="#getting-started">Getting Started</a></li>
+                <li><a href="#editing-highlights">Editing Highlights</a></li>
+                <li><a href="#advanced-editing">Advanced Editing</a></li>
+                <li><a href="#power-features">Power Features</a></li>
+                <li><a href="#transcript-mode">Transcript Mode</a></li>
+                <li><a href="#stats-panel">Statistics Panel</a></li>
+                <li><a href="#license">License</a></li>
+            </ul>
+            Version: 2.0.0
+        </nav>
+    </aside>
+
+    <main class="container">
+        <header class="header">
+            <div>
+                <img src="icons/app-icon.svg" alt="Slothy Marker Logo" class="header-logo">
+                <h1>Slothy Marker</h1>
+                <p class="subheading">Your friendly assistant for summarizing documents.</p>
+            </div>
+        </header>
+
+        <section id="welcome">
+            <p>Slothy Marker is a desktop application designed to streamline your workflow when dealing with large documents. It allows you to quickly extract, review, and manage highlighted text, turning hours of review into minutes of focused work.</p>
+            <h3>Core Features</h3>
+            <ul>
+                <li><strong>Instant Extraction:</strong> Automatically finds and lists all pre-highlighted text from <code>.docx</code>, <code>.pdf</code>, and <code>.txt</code> files.</li>
+                <li><strong>Full Editing Suite:</strong> Add, remove, merge, and edit highlights. Reorder and categorize them to structure your ideas.</li>
+                <li><strong>Powerful Search:</strong> Instantly find any term in your document and highlight all occurrences in a single click.</li>
+                <li><strong>Transcript Mode:</strong> A special mode for video editors to create "paper edits" from transcripts, with automatic timestamp detection and chronological sorting.</li>
+                <li><strong>Live Stats:</strong> Get at-a-glance statistics for your document and highlights, including word counts, reading times, and total duration.</li>
+                <li><strong>Undo/Redo:</strong> A complete history stack lets you undo and redo any action, so you can work without fear.</li>
+                <li><strong>External Editor Integration:</strong> Open your work in your favorite text editor, and Slothy Marker will automatically reload your changes.</li>
+            </ul>
+        </section>
+
+        <section id="getting-started">
+            <h2><img src="icons/document_scan.svg" class="icon" alt="Document Icon"> Getting Started</h2>
+            <p>To start, simply drag a supported file (<code>.docx</code>, <code>.pdf</code>, <code>.txt</code>, <code>.md</code>) anywhere onto the application window, or use the <strong>Open Document</strong> button.</p>
+        </section>
+
+        <section id="editing-highlights">
+            <h2><img src="icons/editing.svg" class="icon" alt="Edit Icon"> Basic Editing</h2>
+            <p>Editing follows a simple "what you see is what you get" principle.</p>
+            <h3>Adding a New Highlight</h3>
+            <ol>
+                <li>In the left document viewer, use your mouse to select any piece of text.</li>
+                <li>Click the green <strong>Add Highlight</strong> button or press <code>Ctrl+H</code>.</li>
+                <li>If your selection touches an existing highlight, it will be automatically merged into one.</li>
+            </ol>
+            <h3>Removing a Highlight</h3>
+            <ol>
+                <li>In the right highlights panel, click on the highlight you wish to remove.</li>
+                <li>Click the red <strong>Remove</strong> button at the top of the right panel.</li>
+            </ol>
+        </section>
+
+        <section id="advanced-editing">
+            <h2><img src="icons/editing_adv.svg" class="icon" alt="Edit Icon"> Advanced Editing</h2>
+            <p>Organize and refine your highlights with powerful editing tools, available directly in the right-hand panel.</p>
+            <h3>In-Place Editing</h3>
+            <p>To fix a typo or change the text of a highlight, simply <strong>double-click</strong> on it in the list. The text will become editable. Press <code>Enter</code> to confirm your changes. This is fully undoable.</p>
+            <h3>Categorizing Highlights</h3>
+            <p>Assign colors to your highlights to categorize them. <strong>Right-click</strong> on any highlight in the list and choose a category from the "Assign Category" menu. The color will update in both the list and the main document viewer.</p>
+            <h3>Manual Reordering (Simple Mode Only)</h3>
+            <p>When in Simple Mode, you can change the order of your highlights to structure your narrative. Simply <strong>click and drag</strong> a highlight in the list to a new position.</p>
+        </section>
+
+        <section id="power-features">
+            <h2><img src="icons/power.svg" class="icon" alt="Rocket Icon"> Power Features</h2>
+            <h3>Search & Highlight All</h3>
+            <p>Use the search bar in the document panel to quickly find text. In addition to "Previous" and "Next", you can click <strong>Highlight All</strong> to instantly turn every occurrence of your search term into a new highlight. This is perfect for thematic analysis.</p>
+            <h3>External Editing & Live Reload</h3>
+            <p>For heavy-duty editing, you can use your favorite text editor.
+            <ol>
+                <li>Click the <strong>Edit File</strong> button.</li>
+                <li>A dialog will explain that you need to save a new version of the file. This new file will contain your latest highlights encoded with <code>==...==</code> syntax.</li>
+                <li>Once you save, that file will open in your default text editor.</li>
+                <li>Make any changes you want—even add new highlights with the <code>==...==</code> syntax! When you save the file in your editor, Slothy Marker will <strong>automatically detect the changes and reload the document</strong>.</li>
+            </ol>
+            </p>
+        </section>
+
+        <section id="transcript-mode">
+            <h2><img src="icons/subtitles.svg" class="icon" alt="Subtitle Icon"> Transcript Mode (Paper Edits)</h2>
+            <p>For video editors, "Transcript Mode" is where Slothy Marker shines. It allows you to create a "paper edit" by highlighting parts of a transcript.</p>
+            <h3>Activating Transcript Mode</h3>
+            <p>To activate this mode, the file you open <strong>must begin with one of the following tags on the very first line</strong>: <code>[SRT]</code>, <code>[VTT]</code>, or <code>[TRANSCRIPT]</code>.</p>
+            <p>When active, the app will:</p>
+            <ul>
+                <li>Sort highlights on the right panel chronologically by timestamp.</li>
+                <li>Automatically find the nearest preceding timestamp for any new highlight.</li>
+                <li>You can include &lt;b&gt;formatting tags like these&lt;/b&gt; or speaker names; your editor might like it!</li>
+                <li>Display the total duration of your highlights in the statistics panel.</li>
+            </ul>
+        </section>
+        
+        <section id="stats-panel">
+             <h2><img src="icons/stats.svg" class="icon" alt="Stats Icon"> The Statistics Panel</h2>
+             <p>At the bottom of each panel, a status bar provides live data about your content.</p>
+             <p>WPM = Words Per Minute</p>
+             <h3>Document Panel:</h3>
+             <ul>
+                <li>Shows the total word count of the entire document and estimated reading times at different speeds.</li>
+                <li>In SRT/VTT mode, it shows the total duration of the source file.</li>
+             </ul>
+             <h3>Highlights Panel:</h3>
+             <ul>
+                <li>Shows the combined word count and reading time of all your highlights.</li>
+                <li>In SRT/VTT mode, it shows the total duration of just the highlighted sections.</li>
+             </ul>
+        </section>
+        <hr>
+
+        <section id="license">
+            <h2><img src="icons/license.svg" class="icon" alt="License Icon"> License</h2>
+            <div class="quote-block">Copyright (c) 2024 Mundhir Werner
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+<strong>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.</strong> IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</div>
+        </section>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('main section[id]');
+            const navLinks = document.querySelectorAll('.sidebar nav a');
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.getAttribute('id');
+                        navLinks.forEach(link => {
+                            link.classList.remove('active');
+                            if (link.getAttribute('href') === `#${id}`) {
+                                link.classList.add('active');
+                            }
+                        });
+                    }
+                });
+            }, { rootMargin: '0px 0px -40% 0px' });
+            sections.forEach(section => observer.observe(section));
+        });
+    </script>
+</body>
+</html>

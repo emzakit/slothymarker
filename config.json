@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "name": "Slothy Marker v2.0.0",
+    "author": "Mundhir Werner"
+  },
+  "icons": {
+    "app": "app-icon.png",
+    "quit": "quit.svg",
+    "help": "help.svg",
+    "tutorial_file": "tut_icons.svg"
+  },
+  "text": {
+    "window_title": "Slothy Marker",
+    "placeholder_header": "Drop a Document Here",
+    "placeholder_body": "or click the 'Open Document' button.",
+    "group_document": "Document Content",
+    "group_highlights": "Extracted Highlights",
+    "export_panel_title": "Export Options",
+    "btn_help_license": " Help / License",
+    "highlights_panel_helper": "Double-click to edit. Drag to reorder (in Simple Mode).",
+    "mode_indicator_label": "Mode: {mode}",
+    "stats_panel": {
+      "words": "Words: {count}",
+      "duration": "Total Duration: {duration}",
+      "wpm_rate": "{wpm} words p/m: {duration}"
+    },
+    "export_button_txt": "Export as Text",
+    "export_button_copy": "Copy All",
+    "export_button_copy_selected": "Copy Selected",
+    "export_button_srt": "Export as SRT",
+    "export_button_vtt": "Export as VTT",
+    "export_button_transcript": "Export Transcript",
+    "button_open_document": "Open Document",
+    "button_edit_document": "Edit File",
+    "button_save_document": "Save",
+    "button_close_document": "Close Document",
+    "button_add_highlight": "Add Highlight",
+    "button_remove_highlight": "Remove",
+    "button_remove_all": "Remove All",
+    "button_undo": "Undo",
+    "button_redo": "Redo",
+    "menu_file": "&File",
+    "action_open": "&Open Document...",
+    "action_close": "&Close Document",
+    "action_quit": "&Quit",
+    "context_menu_copy": "Copy",
+    "dialog_open_title": "Open Document",
+    "dialog_save_srt_title": "Save as SRT",
+    "dialog_save_vtt_title": "Save as VTT",
+    "dialog_save_transcript_title": "Save Transcript",
+    "dialog_save_prompt_title": "Save Changes?",
+    "dialog_save_prompt_text": "You have unsaved changes in '{filename}'.\n\nWould you like to save them before closing?",
+    "dialog_edit_file_title": "External Editing Explained",
+    "dialog_edit_file_text": "To edit this file externally, you first need to save it. This new file will include all your current highlights marked with ==...== syntax.\n\nYour external editor will then open this new file. Any changes you save will be automatically reloaded in Slothy Marker.",
+    "dialog_remove_all_title": "Confirm Deletion",
+    "dialog_remove_all_text": "Are you sure you want to remove all highlights?\nThis action will be added to the undo history.",
+    "drop_overlay_text": "Drop File to Open",
+    "status_all_highlights_removed": "All highlights removed.",
+    "status_file_reloaded": "File reloaded due to external changes.",
+    "external_edit_header": "<!--- Slothy Marker Helper ---\nThis file was saved for external editing. Slothy Marker uses a simple syntax to find your highlights.\n\n- Text wrapped in double equal signs, like ==this==, will become a highlight.\n- You can create your own highlights by adding them here!\n- This entire comment block will be invisible inside the app.\n-->",
+    "error_title": "Error",
+    "error_multiple_tags": "This file contains multiple format tags. Please ensure only one tag is present on the first line."
+  },
+  "colors": {
+    "highlight_bg": "rgba(243, 156, 18, 0.5)"
+  },
+  "app_config": {
+    "tutorial_file": "tutorials/Main Tutorial.txt",
+    "file_tags": ["[SRT]", "[VTT]", "[TRANSCRIPT]"]
+  }
+}

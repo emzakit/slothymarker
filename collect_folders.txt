@@ -1,0 +1,7 @@
+# List of entire folders to bundle with the application.
+# Blank lines and lines starting with # are ignored.
+
+gui
+icons
+themes
+tutorials

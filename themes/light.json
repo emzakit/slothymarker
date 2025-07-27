@@ -1,0 +1,30 @@
+{
+  "colors": {
+    "bg_primary": "#FFFFFF",
+    "bg_secondary": "#F7F9FC",
+    "text_primary": "#2C3E50",
+    "text_secondary": "#7F8C8D",
+    "accent_primary": "#3498DB",
+    "accent_primary_text": "#FFFFFF",
+    "accent_pink_selection": "#E5007E",
+    "accent_green": "#2ECC71",
+    "accent_green_hover": "#2ABE6A",
+    "accent_red": "#E74C3C",
+    "accent_red_hover": "#C0392B",
+    "groupbox_border": "#EAECEF",
+    "splitter_handle_bg": "#ECF0F1",
+    "splitter_handle_border": "#BDC3C7",
+    "tooltip_fg": "#FFFFFF",
+    "tooltip_bg": "#34495E",
+    "button_primary_bg": "#2C3E50",
+    "button_primary_fg": "#FFFFFF",
+    "button_primary_hover_bg": "#34495E",
+    "button_secondary_bg": "#ECF0F1",
+    "button_secondary_fg": "#2C3E50",
+    "button_secondary_hover_bg": "#BDC3C7",
+    "drop_overlay_bg": "rgba(44, 62, 80, 0.8)",
+    "drop_overlay_fg": "#FFFFFF"
+  },
+  "fonts": { "family": "sans-serif", "size": { "default": "11pt", "title": "10pt", "menu": "10pt", "status": "9pt", "placeholder_header": "20pt", "placeholder_body": "12pt", "button": "10pt", "drop_overlay_header": "24pt" }},
+  "layout": { "border_radius": "8px", "border_width": "1px", "padding": "15px", "spacing": "10px", "button_padding": "12px" }
+}

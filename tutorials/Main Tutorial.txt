@@ -1,0 +1,40 @@
+Welcome to Slothy Marker! This is a quick, interactive tutorial.
+
+The application has two main modes: "Simple Mode" and "Transcript Mode". ==This tutorial is in Simple Mode.== In this mode, highlights are listed in the order they appear in the document.
+
+==The text you see highlighted in orange here is also listed in the panel on the right.== Try clicking on this one in the right-hand list to see the document view jump right here!
+
+You can create your own highlights! Drag your mouse over "this text" and click the green "Add Highlight" button, or use the Ctrl+H shortcut.
+If your selection touches an existing highlight, it will automatically be merged. ==Try highlighting this text== to see it join with the previous highlight.
+
+Made a mistake? No problem. The Undo and Redo buttons have you covered. You can also double-click a highlight in the list to edit its text.
+
+==Try removing this highlight by clicking it in the list and then hitting the 'Remove' button.==
+
+To get started with your own work, ==you can open a document (.docx, .pdf, .txt, .md)== by dragging it onto the window or using the "Open Document" button.
+
+---
+
+==Pro Tip: Understanding Transcript Mode==
+
+A "paper edit" is a plan for a video, made by highlighting the best parts of a transcript. Slothy Marker's "Transcript Mode" is designed specifically for this.
+
+It automatically finds timestamps for your highlights and sorts them chronologically. This lets you export a special `.srt` file that video editors can use.
+
+To see this in action, use the example files in the sidebar on the left. The logic is simple: ==what you highlight is what you get, and the app finds the nearest timestamp for you.== Don't worry about including formatting tags like `<b>` or speaker names; your editor might need them!
+
+---
+
+If you want to play around more, here's a story about a sloth learning to use a highlighter. Go wild!:
+
+Sid the sloth had a very important task. He needed to study the legendary Nap Manual, Volume IV, a tome filled with ancient secrets of profound slumber. The most critical passages needed to be marked for future reference. For this, he had acquired a brand-new, fluorescent yellow highlighter.
+
+Opening the highlighter was the first challenge. It was an epic struggle of sloth versus plastic cap, a battle waged in slow motion over the course of an afternoon. With a final, heroic heave, the cap popped off and sailed through the air, landing in a distant houseplant. Sid made a mental note to retrieve it next Tuesday.
+
+Now, the main event. He located the first crucial tip: "Chapter 3: The Importance of Yawning Before a Nap." This was vital information. He positioned the highlighter at the start of the sentence, took a deep breath, and began to drag it across the page.
+
+It was a journey. The world seemed to blur as he moved the felt tip, millimeter by agonizing millimeter. He was a pioneer, a trailblazer, an artist painting with light. He could feel the burn in his... well, in the one claw he was using.
+
+Finally, he reached the end of the sentence. He lifted the highlighter, his heart pounding (at a respectable two beats per minute), and admired his work. There it was: a triumphant, glowing yellow stripe. It was beautiful. It was perfect. It was... slightly wobbly.
+
+He had done it. He had highlighted. It was, without a doubt, the most productive he had been all week. Exhausted but victorious, Sid closed the manual, leaned back in his branch, and took a well-deserved nap to celebrate his monumental achievement.

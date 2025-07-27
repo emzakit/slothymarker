@@ -1,0 +1,33 @@
+[SRT]
+1
+00:00:01,000 --> 00:00:05,000
+==This SRT file contains complex styling.==
+
+2
+00:00:08,200 --> 00:00:12,500
+Try highlighting the words "<b>final</b> approach" from the next line.
+It's okay to include the tags; your video editor might use them!
+
+3
+00:01:15,440 --> 00:01:18,375
+[SOUND of a branch creaking slowly]
+Captain, we're making our <b>final</b> approach to the {u}Napping Tree{/u}.
+
+4
+00:01:20,476 --> 00:01:23,501
+{b}Very good, {i}Ensign{/i}{/b}.
+Prepare for landing. And by landing, I mean a slow, deliberate grab.
+
+5
+00:01:24,948 --> 00:01:27,247 X1:201 X2:516 Y1:397 Y2:423
+<font color="#fbff1c">This text has position data and a specific color.</font>
+
+6
+00:01:33,000 --> 00:01:35,295
+[Captain yawns majestically]
+
+7
+00:01:37,000 --> 00:01:41,295
+==[First Mate] <i>♪ It's time to go to sleep now... ♪
+♪ For a very, very long time... ♪</i>
+This musical line is pre-highlighted. Try removing it.==
