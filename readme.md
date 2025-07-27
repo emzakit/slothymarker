@@ -75,7 +75,6 @@ pip install -r requirements.txt
 ```bash
 python main.py
 ```
-*(Note: You may need to replace `main.py` with the actual name of the main script if it differs).*
 
 ### 📦 Building the Application
 
