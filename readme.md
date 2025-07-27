@@ -41,7 +41,7 @@ You can either download a pre-built version of the application or run it directl
 
 ### For Users (Recommended)
 
-Pre-compiled versions for your operating system can be found on the **[Releases](https://github.com/user/repo/releases)** page of this repository. This is the easiest way to get started.
+Pre-compiled versions for your operating system can be found on the **[Releases](https://github.com/emzakit/slothymarker/releases/)** page of this repository. This is the easiest way to get started.
 
 ### For Developers (Running from Source)
 
