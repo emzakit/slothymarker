@@ -12,8 +12,6 @@
   <img src="https://img.shields.io/badge/PySide6-217346?style=for-the-badge&logo=qt&logoColor=white" alt="PySide6">
 </p>
 
-Part of my ongoing EmTools project where I utilise AI to develop applications.
-
 ---
 
 <p align="center">
